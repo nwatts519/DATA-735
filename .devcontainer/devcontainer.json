@@ -1,0 +1,13 @@
+{
+  "name": "RStudio Server",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [8787],
+  "postCreateCommand": "echo 'RStudio Server is ready!'",
+  "customizations": {
+    "vscode": {
+      "extensions": ["REditorSupport.r"]
+    }
+  }
+}
